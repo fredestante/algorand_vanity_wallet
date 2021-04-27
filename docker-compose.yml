@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  vanity:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: bash -c "python -u"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/usr/src/app
+    env_file:
+      - .env

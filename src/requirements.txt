@@ -1,0 +1,4 @@
+numpy
+websocket_client
+requests
+py-algorand-sdk
