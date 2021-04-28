@@ -16,7 +16,7 @@ docker-compose up -d;
 Once the container is running:
 
 ```bash
-docker exec algorand_vanity_vanity_1 python -u algo_vanity.py ATMO
+docker exec algorand_vanity_wallet_1 python -u algo_vanity.py ATMO
 ```
 
 Just change "ATMO" to whatever string you want your vanity wallet to begin with :)
@@ -29,7 +29,7 @@ Afterwards you can just open the Algorand Official Wallet in your phone and Retr
 
 ## Statistics
 
-In Fred's slow-ass computer, with 2 parallel CPUs, found a 4-letter vanity address in ~5min
+In Fred's slow-ass computer, with 3 parallel CPUs, found a 4-letter vanity address in ~1min
 
 ## TO DO
 
