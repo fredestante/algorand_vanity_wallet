@@ -1,3 +1,21 @@
+
+#!/usr/bin/env python3
+#
+# algo_vanity.py - generate vanity address for algorand
+#
+# Depends on py-algorand-sdk which can be installed with:
+#
+# pip3 install py-algorand-sdk
+#
+# If you don't have pip3 you can install it with:
+#
+# apt install python3-pip
+#
+# Derek Yoo
+# derek@purestake.com
+# Oct-13-2019
+#
+
 import argparse
 import time
 import signal

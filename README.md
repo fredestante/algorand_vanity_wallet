@@ -1,6 +1,8 @@
 # Algorand Vanity Wallet Finder
 
-Algorand Vanity Wallet Finder
+Algorand Vanity Wallet Finder.
+
+This repo was built following the guide provided by PureStack at https://www.purestake.com/blog/algorand-vanity-address-utility/ and their source code available at https://github.com/PureStake/api-examples/blob/master/python-examples/algo_vanity.py
 
 ## Requirements
 
@@ -9,17 +11,19 @@ Algorand Vanity Wallet Finder
 
 ## Usage
 
+Usage is very simple. After cloning this repo to your local machine and booting up Docker, simply run:
+
 ```bash
 docker-compose up -d;
 ```
 
-Once the container is running:
+Once the container is running,:
 
 ```bash
-docker exec algorand_vanity_wallet_1 python -u algo_vanity.py ATMO
+docker exec algorand_vanity_wallet_1 python -u algo_vanity.py ALGO
 ```
 
-Just change "ATMO" to whatever string you want your vanity wallet to begin with :)
+Just change "ALGO" to whatever string you want your vanity wallet to begin with :)
 
 ## Data Output
 
@@ -27,10 +31,9 @@ When the script finds your wallet it prints on the screen the Public Address and
 
 Afterwards you can just open the Algorand Official Wallet in your phone and Retrieve an Account using the passphrase for the vanity wallet.
 
+
 ## Statistics
 
-In Fred's slow-ass computer, with 3 parallel CPUs, found a 4-letter vanity address in ~1min
+Performance depends on your computer specs, but expect a 4-letter string to take up to a minute and a 5-letter string to take several minutes.
 
-## TO DO
-
-1.
+6-letter strings will likely take many hours.
